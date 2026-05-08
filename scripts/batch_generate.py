@@ -1,6 +1,9 @@
-import argparse
-from scripts.generate_article import build_article
+import sys
+import os
 
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from generate_article import build_article
 def run_batch(cluster, number):
 
     for i in range(int(number)):
