@@ -3,28 +3,48 @@ import os
 import yaml
 from datetime import datetime
 
+# =========================
+# OUTPUT
+# =========================
+
 OUTPUT_DIR = "output/articles"
 
-def slugify(title):
+# =========================
+# PATH SAFE BASE DIR
+# =========================
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+# =========================
+# UTILS
+# =========================
+
+def slugify(title: str):
     return title.lower().replace(" ", "-").replace("'", "")
 
 def load_yaml(path):
-    with open(path, "r", encoding="utf-8") as file:
+    full_path = os.path.join(BASE_DIR, path)
+    with open(full_path, "r", encoding="utf-8") as file:
         return yaml.safe_load(file)
 
 def load_template(path):
-    with open(path, "r", encoding="utf-8") as file:
+    full_path = os.path.join(BASE_DIR, path)
+    with open(full_path, "r", encoding="utf-8") as file:
         return file.read()
 
 def save_output(slug, content):
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    path = f"{OUTPUT_DIR}/{slug}.md"
+    path = os.path.join(OUTPUT_DIR, f"{slug}.md")
 
     with open(path, "w", encoding="utf-8") as file:
         file.write(content)
 
     print(f"\n✅ Article generated: {path}")
+
+# =========================
+# CORE GENERATOR
+# =========================
 
 def build_article(title, cluster):
 
@@ -35,68 +55,85 @@ def build_article(title, cluster):
     cta_engine = load_yaml("engine/cta_engine.yaml")
     linking_graph = load_yaml("engine/linking_graph.yaml")
 
+    # =========================
+    # CTA (ITALIANO)
+    # =========================
+
     cta_soft = cta_engine[cluster]["soft"][0]
     cta_medium = cta_engine[cluster]["medium"][0]
     cta_strong = cta_engine[cluster]["strong"][0]
 
+    # =========================
+    # INTERNAL LINKS
+    # =========================
+
     links = linking_graph[cluster]["links"]
+
+    # =========================
+    # ITALIAN SEO CONTENT CORE
+    # =========================
 
     article = template
 
     replacements = {
+
+        # META
         "{{title}}": title,
         "{{slug}}": slug,
         "{{cluster}}": cluster,
+
         "{{primary_keyword}}": title.lower(),
         "{{secondary_keyword_1}}": f"{title.lower()} tips",
         "{{secondary_keyword_2}}": f"best {title.lower()}",
-        "{{meta_description}}": f"Learn {title.lower()} with practical examples and easy explanations.",
+
+        # 🇮🇹 META DESCRIPTION ITALIANA
+        "{{meta_description}}": f"Impara {title.lower()} con esempi pratici e spiegazioni semplici.",
+
+        # STRUTTURA SEO
         "{{intent}}": "informational",
         "{{difficulty}}": "beginner",
         "{{reading_time}}": "10 min",
         "{{date}}": datetime.today().strftime("%Y-%m-%d"),
 
-        "{{introduction}}": f"{title} is one of the most useful skills for English learners.",
-        "{{section_1}}": "This section explains the foundations and practical usage.",
-        "{{mistakes}}": "Many learners make the same mistakes when studying this topic.",
-        "{{real_life_example}}": "Here is a realistic real-world example.",
-        "{{section_2}}": "Follow these practical steps to improve faster.",
-        "{{practical_tips}}": "Practice daily and focus on consistency.",
-        "{{exercise_block}}": "Try writing 5 sentences using today's structure.",
-        "{{section_3}}": "Daily speaking and repetition are essential.",
-        "{{daily_routine}}": "Spend at least 15 minutes every day practicing.",
-        "{{recommended_methods}}": "Use shadowing, spaced repetition and active recall.",
+        # 🇮🇹 CONTENUTO ITALIANO
+        "{{introduction}}": f"{title} è una delle competenze più utili per chi studia inglese.",
 
-        "{{faq_question_1}}": f"What is the best way to learn {title.lower()}?",
-        "{{faq_answer_1}}": "Practice consistently using practical examples.",
+        "{{section_1}}": "Questa sezione spiega le basi e l’uso pratico dell’argomento.",
 
-        "{{faq_question_2}}": f"How long does it take to improve {title.lower()}?",
-        "{{faq_answer_2}}": "Most learners see progress after a few weeks of consistent practice.",
+        "{{mistakes}}": "Molti studenti commettono errori comuni che rallentano i progressi.",
 
-        "{{faq_question_3}}": f"Can beginners learn {title.lower()}?",
-        "{{faq_answer_3}}": "Yes, beginners can improve step by step with the right method.",
+        "{{real_life_example}}": "Ecco un esempio reale per capire meglio come usare questa competenza.",
 
-        "{{conclusion}}": f"{title} becomes easier with daily exposure and practice.",
+        "{{section_2}}": "Segui questi passaggi per migliorare in modo più rapido ed efficace.",
 
-        "{{cta_soft}}": f"> 🚀 {cta_soft}",
-        "{{cta_medium}}": f"> 🔥 {cta_medium}",
-        "{{cta_strong}}": f"> ✅ {cta_strong}",
+        "{{practical_tips}}": "La costanza è la chiave: pratica ogni giorno anche per pochi minuti.",
 
-        "{{internal_link_block_1}}":
-            f"- Related: {links[0]}\n- Related: {links[1]}",
+        # 💰 CTA ITALIANE
+        "{{cta_soft}}": cta_soft,
+        "{{cta_medium}}": cta_medium,
+        "{{cta_strong}}": cta_strong,
 
-        "{{internal_link_block_2}}":
-            f"- Explore more: {links[2]}",
+        # 🔗 LINKING
+        "{{related_links}}": "\n".join([f"- {link}" for link in links]),
 
-        "{{related_article_1}}": links[0],
-        "{{related_article_2}}": links[1],
-        "{{related_article_3}}": links[2],
     }
+
+    # =========================
+    # APPLY REPLACEMENTS
+    # =========================
 
     for key, value in replacements.items():
         article = article.replace(key, value)
 
+    # =========================
+    # SAVE
+    # =========================
+
     save_output(slug, article)
+
+# =========================
+# CLI ENTRYPOINT
+# =========================
 
 if __name__ == "__main__":
 
