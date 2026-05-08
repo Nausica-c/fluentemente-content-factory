@@ -1,87 +1,119 @@
 beginner:
+
   pillar: "/english-beginner-guide/"
 
   links:
-    - "/basic-phrases/"
+    - "/basic-english-phrases/"
     - "/english-daily-life/"
-    - "/first-100-english-words/"
+    - "/common-english-mistakes/"
+    - "/how-to-learn-english-fast/"
 
 travel:
+
   pillar: "/english-travel/"
 
   links:
     - "/airport-english/"
     - "/hotel-phrases/"
     - "/restaurant-english/"
+    - "/travel-survival-phrases/"
+    - "/english-for-tourists/"
 
 business:
+
   pillar: "/business-english/"
 
   links:
     - "/meeting-english/"
     - "/email-writing/"
     - "/job-interview-english/"
+    - "/professional-vocabulary/"
+    - "/business-communication/"
 
 method:
+
   pillar: "/english-learning-method/"
 
   links:
-    - "/how-to-learn-fast/"
     - "/spaced-repetition-guide/"
-    - "/best-language-learning-methods/"
+    - "/shadowing-technique/"
+    - "/language-learning-routine/"
+    - "/how-to-study-effectively/"
+    - "/memory-techniques-for-languages/"
 
 mindset:
+
   pillar: "/language-learning-mindset/"
 
   links:
-    - "/how-to-overcome-fear-speaking/"
-    - "/build-language-habit/"
-    - "/how-to-stay-motivated/"
+    - "/fear-of-speaking-english/"
+    - "/language-learning-motivation/"
+    - "/confidence-speaking-english/"
+    - "/overcoming-language-anxiety/"
+    - "/consistency-in-learning/"
 
 vocabulary:
+
   pillar: "/english-vocabulary-master/"
 
   links:
-    - "/high-frequency-words/"
-    - "/travel-vocabulary/"
     - "/daily-english-words/"
+    - "/high-frequency-words/"
+    - "/learn-words-fast/"
+    - "/memory-techniques-vocabulary/"
+    - "/english-word-lists/"
 
 grammar_pratica:
+
   pillar: "/practical-english-grammar/"
 
   links:
-    - "/present-tenses-guide/"
     - "/common-grammar-mistakes/"
-    - "/english-verb-tenses/"
+    - "/english-tenses-guide/"
+    - "/articles-a-an-the/"
+    - "/sentence-structure-english/"
+    - "/grammar-practice-exercises/"
 
 speaking:
+
   pillar: "/english-speaking-fluency/"
 
   links:
-    - "/how-to-practice-speaking-alone/"
-    - "/shadowing-technique/"
+    - "/how-to-speak-english-alone/"
+    - "/shadowing-practice/"
     - "/english-pronunciation-tips/"
+    - "/daily-speaking-routine/"
+    - "/fluency-building-methods/"
 
 errori:
+
   pillar: "/common-english-mistakes/"
 
   links:
     - "/false-friends-english/"
-    - "/pronunciation-errors/"
-    - "/grammar-errors-beginners/"
+    - "/pronunciation-mistakes-italians/"
+    - "/grammar-mistakes-common/"
+    - "/speaking-errors/"
+    - "/writing-mistakes-english/"
 
 curiosita:
+
   pillar: "/english-language-facts/"
 
   links:
-    - "/english-weird-expressions/"
-    - "/origin-of-english-words/"
-    - "/fun-facts-about-english/"
+    - "/fun-english-expressions/"
+    - "/weird-english-words/"
+    - "/english-etymology/"
+    - "/language-facts/"
+    - "/english-idoms-origins/"
 
 lifelong_learner:
+
   pillar: "/language-learning-for-adults/"
 
   links:
-    - "/learning-after-30/"
-    - "/how-to-stay-consistent/"
-    - "/english-for-busy-adults/"
+    - "/learning-english-after-30/"
+    - "/busy-people-learning-english/"
+    - "/language-learning-habits/"
+    - "/study-languages-without-time/"
+    - "/long-term-learning-strategy/"
