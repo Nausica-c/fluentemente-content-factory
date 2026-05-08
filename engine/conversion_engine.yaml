@@ -1,14 +1,66 @@
+meta:
+  name: "FluenteMente Full Conversion Engine"
+  version: "1.0"
+
 funnel:
+
   awareness:
+    intent: informational
     cta_intensity: soft
 
   consideration:
+    intent: problem_aware
     cta_intensity: medium
 
   conversion:
+    intent: solution_ready
     cta_intensity: strong
 
 rules:
-  max_cta_per_article: 3
-  max_internal_links: 8
-  pillar_link_required: true
+
+  article:
+    min_words: 1800
+    recommended_words: 2500
+
+  cta:
+    min_per_article: 3
+    max_per_article: 4
+
+  internal_links:
+    min_per_article: 4
+    max_per_article: 8
+
+  pillar:
+    mandatory_link: true
+
+  readability:
+    short_paragraphs: true
+    conversational_tone: true
+
+placement:
+
+  cta_positions:
+    - 25_percent
+    - 60_percent
+    - 90_percent
+
+  internal_link_positions:
+    - introduction_end
+    - middle_content
+    - conclusion
+
+seo:
+
+  keyword_density:
+    min: 0.8
+    max: 1.2
+
+  semantic_keywords: true
+
+output:
+
+  format: markdown
+
+  directories:
+    articles: "/output/articles/"
+    pillars: "/output/pillars/"
