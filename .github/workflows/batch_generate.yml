@@ -1,0 +1,54 @@
+name: Batch Generate Articles
+
+on:
+
+  workflow_dispatch:
+
+    inputs:
+
+      cluster:
+        description: "Cluster name"
+        required: true
+
+      number:
+        description: "Number of articles"
+        required: true
+
+jobs:
+
+  batch_generation:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Run batch generator
+        run: |
+          python scripts/batch_generate.py \
+          --cluster "${{ github.event.inputs.cluster }}" \
+          --number "${{ github.event.inputs.number }}"
+
+      - name: Commit generated content
+        run: |
+
+          git config --global user.name "fluente-bot"
+          git config --global user.email "bot@fluentemente.ai"
+
+          git add output/
+
+          git commit -m "Batch generated articles"
+
+          git push
