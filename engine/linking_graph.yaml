@@ -1,17 +1,87 @@
 beginner:
   pillar: "/english-beginner-guide/"
+
   links:
     - "/basic-phrases/"
     - "/english-daily-life/"
+    - "/first-100-english-words/"
 
 travel:
   pillar: "/english-travel/"
+
   links:
     - "/airport-english/"
     - "/hotel-phrases/"
+    - "/restaurant-english/"
 
 business:
   pillar: "/business-english/"
+
   links:
     - "/meeting-english/"
     - "/email-writing/"
+    - "/job-interview-english/"
+
+method:
+  pillar: "/english-learning-method/"
+
+  links:
+    - "/how-to-learn-fast/"
+    - "/spaced-repetition-guide/"
+    - "/best-language-learning-methods/"
+
+mindset:
+  pillar: "/language-learning-mindset/"
+
+  links:
+    - "/how-to-overcome-fear-speaking/"
+    - "/build-language-habit/"
+    - "/how-to-stay-motivated/"
+
+vocabulary:
+  pillar: "/english-vocabulary-master/"
+
+  links:
+    - "/high-frequency-words/"
+    - "/travel-vocabulary/"
+    - "/daily-english-words/"
+
+grammar_pratica:
+  pillar: "/practical-english-grammar/"
+
+  links:
+    - "/present-tenses-guide/"
+    - "/common-grammar-mistakes/"
+    - "/english-verb-tenses/"
+
+speaking:
+  pillar: "/english-speaking-fluency/"
+
+  links:
+    - "/how-to-practice-speaking-alone/"
+    - "/shadowing-technique/"
+    - "/english-pronunciation-tips/"
+
+errori:
+  pillar: "/common-english-mistakes/"
+
+  links:
+    - "/false-friends-english/"
+    - "/pronunciation-errors/"
+    - "/grammar-errors-beginners/"
+
+curiosita:
+  pillar: "/english-language-facts/"
+
+  links:
+    - "/english-weird-expressions/"
+    - "/origin-of-english-words/"
+    - "/fun-facts-about-english/"
+
+lifelong_learner:
+  pillar: "/language-learning-for-adults/"
+
+  links:
+    - "/learning-after-30/"
+    - "/how-to-stay-consistent/"
+    - "/english-for-busy-adults/"
