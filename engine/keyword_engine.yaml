@@ -1,0 +1,93 @@
+method:
+
+  seed_topics:
+    - "how to learn english faster"
+    - "best language learning method"
+    - "spaced repetition technique"
+    - "how to study english effectively"
+    - "english learning routine"
+
+  intents:
+
+    beginner:
+      patterns:
+        - "how to start {topic}"
+        - "{topic} for beginners"
+        - "easy guide to {topic}"
+
+    problem:
+      patterns:
+        - "why you can't {topic}"
+        - "common mistakes in {topic}"
+        - "why {topic} doesn't work"
+
+    advanced:
+      patterns:
+        - "advanced {topic} techniques"
+        - "master {topic}"
+        - "{topic} strategy that works"
+
+travel:
+
+  seed_topics:
+    - "airport english phrases"
+    - "hotel check-in english"
+    - "travel survival english"
+
+  intents:
+
+    beginner:
+      patterns:
+        - "{topic} for beginners"
+        - "easy {topic} guide"
+
+    problem:
+      patterns:
+        - "common mistakes in {topic}"
+        - "why you struggle with {topic}"
+
+    advanced:
+      patterns:
+        - "advanced {topic} tips"
+
+business:
+
+  seed_topics:
+    - "business english emails"
+    - "meeting english phrases"
+    - "job interview english"
+
+  intents:
+
+    beginner:
+      patterns:
+        - "{topic} basics"
+        - "simple {topic} guide"
+
+    problem:
+      patterns:
+        - "common mistakes in {topic}"
+
+    advanced:
+      patterns:
+        - "advanced {topic} for professionals"
+
+output_language: "italian"
+
+title_language: "italian"
+
+content_language: "italian"
+
+translation_rules:
+  title:
+    enabled: true
+    style: "natural_italian"
+
+  content:
+    enabled: true
+
+  keep_keywords:
+    - "english"
+    - "spaced repetition"
+    - "shadowing"
+    - "business english"
