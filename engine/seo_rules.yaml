@@ -1,342 +1,91 @@
-seo_rules:
+seo:
 
-  global:
+  language: "en"
 
-    language: "en"
+  content:
 
-    content_quality:
-      minimum_words: 1800
-      recommended_words: 2500
-      readability_level: "simple_clear_practical"
+    min_words: 1800
+    recommended_words: 2500
 
-    article_structure:
-      required_sections:
-        - introduction
-        - body
-        - examples
-        - conclusion
-
-      recommended_sections:
-        - faq
-        - mistakes
-        - practical_exercises
-        - real_life_examples
+    tone:
+      - practical
+      - conversational
+      - encouraging
 
     formatting:
       short_paragraphs: true
-      paragraph_max_lines: 4
+      markdown: true
 
-      use_lists: true
-      use_tables_when_useful: true
+  title:
 
-      markdown_required: true
-
-  # =========================
-  # TITLE RULES
-  # =========================
-
-  titles:
-
-    rules:
-      primary_keyword_required: true
-      emotional_trigger_optional: true
-      benefit_required: true
+    min_characters: 45
+    max_characters: 65
 
     formats:
       - "{keyword}: Complete Guide"
       - "How to {keyword}"
       - "{keyword} for Beginners"
-      - "{keyword} Made Simple"
-      - "{keyword}: Common Mistakes"
-
-    constraints:
-      min_characters: 45
-      max_characters: 65
-
-  # =========================
-  # META DESCRIPTION
-  # =========================
 
   meta_description:
 
-    rules:
-      include_primary_keyword: true
-      include_benefit: true
-      include_cta: true
+    min_characters: 130
+    max_characters: 155
 
-    constraints:
-      min_characters: 130
-      max_characters: 155
-
-    templates:
-      - "Learn {keyword} with simple explanations, examples and practical tips."
-      - "Improve your {keyword} with this practical step-by-step guide."
-      - "Master {keyword} faster with real examples and easy explanations."
-
-  # =========================
-  # URL RULES
-  # =========================
-
-  urls:
-
-    rules:
-      lowercase_only: true
-      use_hyphens: true
-      stop_words_removal: true
-
-    structure:
-      cluster_based: true
-
-    examples:
-      - "/travel/how-to-order-food-in-english/"
-      - "/grammar/common-english-mistakes/"
-      - "/speaking/how-to-speak-more-fluently/"
-
-  # =========================
-  # INTRO RULES
-  # =========================
-
-  introductions:
-
-    rules:
-      primary_keyword_in_first_100_words: true
-      hook_required: true
-      identify_problem: true
-      promise_solution: true
-
-    recommended_structure:
-      - hook
-      - user_problem
-      - article_promise
-
-  # =========================
-  # HEADINGS RULES
-  # =========================
+    include_keyword: true
+    include_benefit: true
 
   headings:
 
-    h1:
-      max_per_article: 1
+    h1_per_article: 1
 
     h2:
-      every_words: 250
+      every_words: 300
 
-    h3:
-      use_for_examples: true
-      use_for_breakdowns: true
-
-    rules:
-      include_secondary_keywords: true
-      clarity_over_creativity: true
-
-  # =========================
-  # KEYWORD STRATEGY
-  # =========================
+    include_secondary_keywords: true
 
   keywords:
 
-    primary_keyword:
+    primary_density:
+      min: 0.8
+      max: 1.2
 
-      density:
-        minimum: 0.8
-        maximum: 1.2
+    semantic_variations: true
 
-      placement:
-        - title
-        - intro
-        - one_h2
-        - conclusion
+  linking:
 
-    secondary_keywords:
+    internal_links:
+      min: 4
+      max: 8
 
-      rules:
-        semantic_variations_required: true
-        natural_usage_only: true
-
-      placement:
-        - h2
-        - examples
-        - faq
-
-    semantic_keywords:
-      use_nlp_entities: true
-      contextual_relevance_required: true
-
-  # =========================
-  # INTERNAL LINKING
-  # =========================
-
-  internal_linking:
-
-    rules:
-      minimum_links: 4
-      maximum_links: 8
-
-      must_link_to_pillar: true
-
-      contextual_only: true
-
-      avoid_duplicate_links: true
-
-    placement:
-      - introduction_end
-      - middle_content
-      - conclusion
-
-  # =========================
-  # EXTERNAL LINKS
-  # =========================
-
-  external_links:
-
-    rules:
-      authority_sources_only: true
-
-      recommended_sources:
-        - dictionaries
-        - academic_sources
-        - official_language_resources
-
-      max_external_links: 3
-
-  # =========================
-  # IMAGE SEO
-  # =========================
-
-  images:
-
-    rules:
-      alt_text_required: true
-      descriptive_file_names: true
-
-    alt_structure:
-      - keyword
-      - contextual_description
-
-    compression_required: true
-
-  # =========================
-  # FAQ SEO
-  # =========================
+    must_link_to_pillar: true
 
   faq:
 
     enabled: true
 
-    rules:
-      minimum_questions: 3
-      maximum_questions: 6
-
-      use_long_tail_keywords: true
-
-    schema_markup_recommended: true
-
-  # =========================
-  # CTA SEO + CONVERSION
-  # =========================
-
-  cta:
-
-    rules:
-      minimum_per_article: 3
-      maximum_per_article: 4
-
-      avoid_first_150_words: true
-
-    placements:
-      - after_first_value_section
-      - middle_content
-      - conclusion
-
-    styles:
-      - soft
-      - medium
-      - strong
-
-  # =========================
-  # READABILITY
-  # =========================
+    min_questions: 3
+    max_questions: 6
 
   readability:
 
-    rules:
-      use_simple_language: true
-      avoid_long_sentences: true
-      conversational_tone: true
+    max_sentence_words: 20
 
-    sentence_length:
-      recommended_max_words: 20
+    transition_words: true
 
-    transition_words_required: true
+  conclusion:
 
-  # =========================
-  # CONTENT DEPTH
-  # =========================
+    summary_required: true
 
-  topical_authority:
+    final_cta_required: true
 
-    rules:
-      include_examples: true
-      include_real_scenarios: true
-      answer_search_intent: true
+output:
 
-    recommended_elements:
-      - examples
-      - mistakes
-      - practical_usage
-      - mini_exercises
-      - comparisons
+  format: markdown
 
-  # =========================
-  # CONCLUSION RULES
-  # =========================
-
-  conclusions:
-
-    rules:
-      summarize_main_points: true
-      motivational_closing: true
-      final_cta_required: true
-
-  # =========================
-  # AI GENERATION RULES
-  # =========================
-
-  ai_generation:
-
-    tone:
-      - practical
-      - encouraging
-      - simple
-      - conversational
-
-    avoid:
-      - robotic_language
-      - keyword_stuffing
-      - generic_filler
-
-    must_include:
-      - practical_examples
-      - actionable_advice
-      - natural_transitions
-
-  # =========================
-  # OUTPUT FORMAT
-  # =========================
-
-  output:
-
-    format: "markdown"
-
-    required_elements:
-      - frontmatter
-      - title
-      - meta_description
-      - article_body
-      - faq
-      - cta_blocks
-      - internal_links
-
-    export_paths:
-      articles: "/output/articles/"
-      pillars: "/output/pillars/"
+  required_sections:
+    - frontmatter
+    - introduction
+    - body
+    - faq
+    - conclusion
+    - cta
