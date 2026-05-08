@@ -1,0 +1,227 @@
+clusters:
+
+  beginner:
+    name: "Beginner"
+
+    description: >
+      Content for complete beginners learning English.
+
+    target_audience:
+      - beginners
+      - nervous_learners
+      - first_time_students
+
+    pillar:
+      title: "English Beginner Guide"
+      url: "/english-beginner-guide/"
+
+    cta_profile: beginner
+
+    seo_keywords:
+      - english for beginners
+      - beginner english
+      - basic english
+
+  travel:
+    name: "Travel"
+
+    description: >
+      Practical English for travel situations.
+
+    target_audience:
+      - travelers
+      - tourists
+      - digital_nomads
+
+    pillar:
+      title: "English For Travel"
+      url: "/english-travel/"
+
+    cta_profile: travel
+
+    seo_keywords:
+      - travel english
+      - airport english
+      - hotel english
+
+  business:
+    name: "Business"
+
+    description: >
+      Professional English for work and career growth.
+
+    target_audience:
+      - professionals
+      - remote_workers
+      - job_seekers
+
+    pillar:
+      title: "Business English Guide"
+      url: "/business-english/"
+
+    cta_profile: business
+
+    seo_keywords:
+      - business english
+      - english for work
+      - professional english
+
+  method:
+    name: "Method"
+
+    description: >
+      Study systems and learning methods.
+
+    target_audience:
+      - self_learners
+      - productivity_learners
+
+    pillar:
+      title: "Language Learning Method"
+      url: "/english-learning-method/"
+
+    cta_profile: method
+
+    seo_keywords:
+      - how to learn english fast
+      - language learning methods
+
+  mindset:
+    name: "Mindset"
+
+    description: >
+      Psychology and motivation for language learners.
+
+    target_audience:
+      - anxious_learners
+      - inconsistent_students
+
+    pillar:
+      title: "Language Learning Mindset"
+      url: "/language-learning-mindset/"
+
+    cta_profile: mindset
+
+    seo_keywords:
+      - language learning motivation
+      - fear of speaking english
+
+  vocabulary:
+    name: "Vocabulary"
+
+    description: >
+      Practical vocabulary for real-world English.
+
+    target_audience:
+      - conversation_learners
+      - intermediate_students
+
+    pillar:
+      title: "English Vocabulary Master"
+      url: "/english-vocabulary-master/"
+
+    cta_profile: vocabulary
+
+    seo_keywords:
+      - english vocabulary
+      - useful english words
+
+  grammar_pratica:
+    name: "Grammar Practice"
+
+    description: >
+      Practical English grammar explained simply.
+
+    target_audience:
+      - beginners
+      - intermediate_students
+
+    pillar:
+      title: "Practical English Grammar"
+      url: "/practical-english-grammar/"
+
+    cta_profile: grammar_pratica
+
+    seo_keywords:
+      - practical english grammar
+      - grammar mistakes
+
+  speaking:
+    name: "Speaking"
+
+    description: >
+      Fluency and speaking practice.
+
+    target_audience:
+      - shy_speakers
+      - fluency_seekers
+
+    pillar:
+      title: "English Speaking Fluency"
+      url: "/english-speaking-fluency/"
+
+    cta_profile: speaking
+
+    seo_keywords:
+      - english speaking practice
+      - improve speaking english
+
+  errori:
+    name: "Errori"
+
+    description: >
+      Common English mistakes and corrections.
+
+    target_audience:
+      - intermediate_students
+      - perfectionists
+
+    pillar:
+      title: "Common English Mistakes"
+      url: "/common-english-mistakes/"
+
+    cta_profile: errori
+
+    seo_keywords:
+      - common english mistakes
+      - pronunciation mistakes
+
+  curiosita:
+    name: "Curiosità"
+
+    description: >
+      Fun facts and language curiosities.
+
+    target_audience:
+      - curious_learners
+      - casual_readers
+
+    pillar:
+      title: "English Language Facts"
+      url: "/english-language-facts/"
+
+    cta_profile: curiosita
+
+    seo_keywords:
+      - english fun facts
+      - weird english expressions
+
+  lifelong_learner:
+    name: "Lifelong Learner"
+
+    description: >
+      Language learning for adults and long-term learners.
+
+    target_audience:
+      - adults
+      - busy_people
+
+    pillar:
+      title: "Language Learning For Adults"
+      url: "/language-learning-for-adults/"
+
+    cta_profile: lifelong_learner
+
+    seo_keywords:
+      - learning english after 30
+      - language learning adults
