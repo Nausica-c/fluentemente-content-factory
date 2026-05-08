@@ -1,115 +1,143 @@
-beginner:
+method:
+
   soft:
-    - "Inizia con le basi su Babbel"
-    - "Scopri un metodo semplice per partire da zero"
+    - "Scopri un metodo più semplice per imparare le lingue ogni giorno"
+    - "Inizia a migliorare il tuo inglese senza stress"
 
   medium:
-    - "Prova Babbel per 7 giorni e costruisci le basi"
-    - "Inizia a parlare inglese passo dopo passo"
+    - "Prova un metodo pratico per imparare più velocemente"
+    - "Sblocca un sistema di studio più efficace oggi stesso"
 
   strong:
-    - "Parla inglese da oggi con Babbel"
+    - "Inizia oggi a parlare inglese con più sicurezza"
+    - "Cambia il tuo metodo di studio e migliora subito"
 
 travel:
+
   soft:
-    - "Frasi utili per viaggiare subito"
-    - "Preparati al tuo prossimo viaggio"
+    - "Impara frasi utili per viaggiare senza stress"
+    - "Rendi il tuo prossimo viaggio più semplice"
 
   medium:
-    - "Viaggia senza stress linguistico con Babbel"
-    - "Impara le frasi che servono davvero all’estero"
+    - "Comunica facilmente all’estero in poche settimane"
+    - "Parla inglese nei viaggi senza paura"
 
   strong:
-    - "Parla subito all’estero con Babbel"
+    - "Viaggia e parla inglese con sicurezza da oggi"
 
 business:
+
   soft:
-    - "Migliora il tuo inglese per il lavoro"
-    - "Vocabolario utile per email e meeting"
+    - "Migliora il tuo inglese professionale passo dopo passo"
+    - "Rendi il tuo inglese più utile per il lavoro"
 
   medium:
-    - "Sblocca opportunità professionali con l’inglese"
-    - "Comunica meglio in ambienti internazionali"
+    - "Sblocca nuove opportunità lavorative con l’inglese"
+    - "Comunica meglio in contesti professionali"
 
   strong:
-    - "Accelera la tua carriera con Babbel"
+    - "Accelera la tua carriera con un inglese fluente"
 
-method:
+beginner:
+
   soft:
-    - "Scopri come imparare le lingue più velocemente"
+    - "Inizia dalle basi dell’inglese in modo semplice"
+    - "Scopri come iniziare a studiare inglese senza confusione"
 
   medium:
-    - "Usa un metodo scientifico per imparare meglio"
+    - "Impara le basi dell’inglese in modo efficace"
+    - "Costruisci una base solida di inglese"
 
   strong:
-    - "Trasforma il tuo modo di studiare lingue"
+    - "Inizia oggi il tuo percorso verso la fluidità"
 
 mindset:
+
   soft:
-    - "Supera le difficoltà nell’apprendimento"
+    - "Supera la paura di parlare inglese"
+    - "Impara a studiare lingue con più motivazione"
 
   medium:
-    - "Elimina il blocco mentale nel parlare"
+    - "Sblocca il tuo potenziale linguistico"
+    - "Elimina i blocchi mentali nello studio delle lingue"
 
   strong:
-    - "Inizia a parlare senza paura oggi stesso"
+    - "Trasforma il tuo modo di imparare le lingue"
 
 vocabulary:
+
   soft:
-    - "Espandi il tuo vocabolario base"
+    - "Impara parole utili per la vita reale"
+    - "Espandi il tuo vocabolario ogni giorno"
 
   medium:
-    - "Impara parole che userai davvero"
+    - "Ricorda più parole senza sforzo"
+    - "Aumenta il tuo vocabolario velocemente"
 
   strong:
-    - "Parla con un vocabolario fluente"
+    - "Parla con più sicurezza grazie a un vocabolario forte"
 
 grammar_pratica:
+
   soft:
-    - "Impara la grammatica in modo semplice"
+    - "Capisci la grammatica in modo semplice"
+    - "Migliora la tua grammatica senza stress"
 
   medium:
-    - "Usa la grammatica senza stress"
+    - "Evita errori grammaticali comuni"
+    - "Usa la grammatica in modo pratico"
 
   strong:
-    - "Parla correttamente in modo naturale"
+    - "Scrivi e parla inglese correttamente da subito"
 
 speaking:
+
   soft:
-    - "Inizia a praticare lo speaking ogni giorno"
+    - "Inizia a parlare inglese ogni giorno"
+    - "Migliora la tua pronuncia passo dopo passo"
 
   medium:
-    - "Migliora la tua fluidità orale"
+    - "Parla inglese con più sicurezza"
+    - "Allenati a parlare senza paura"
 
   strong:
-    - "Parla inglese con sicurezza reale"
+    - "Parla inglese fluentemente nella vita reale"
 
 errori:
+
   soft:
-    - "Evita gli errori più comuni"
+    - "Evita gli errori più comuni in inglese"
+    - "Scopri dove sbagli più spesso"
 
   medium:
-    - "Correggi i tuoi errori più frequenti"
+    - "Correggi i tuoi errori in inglese rapidamente"
+    - "Migliora la tua accuratezza linguistica"
 
   strong:
-    - "Elimina gli errori definitivamente"
+    - "Elimina gli errori e parla correttamente"
 
 curiosita:
+
   soft:
     - "Scopri curiosità interessanti sull’inglese"
+    - "Impara cose nuove sulla lingua inglese"
 
   medium:
-    - "Impara inglese in modo divertente"
+    - "Espandi la tua conoscenza della lingua"
+    - "Diventa più consapevole dell’inglese reale"
 
   strong:
-    - "Trasforma curiosità in fluency"
+    - "Impara inglese in modo divertente e naturale"
 
 lifelong_learner:
+
   soft:
-    - "Impara lingue anche dopo i 30"
+    - "Impara inglese anche se hai poco tempo"
+    - "Studia lingue in modo sostenibile ogni giorno"
 
   medium:
-    - "Crea una routine di apprendimento costante"
+    - "Costruisci un’abitudine di studio costante"
+    - "Impara inglese anche da adulto senza stress"
 
   strong:
-    - "Diventa fluente nel lungo periodo"
+    - "Rendi l’inglese parte della tua vita quotidiana"
