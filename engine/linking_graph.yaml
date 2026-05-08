@@ -1,0 +1,17 @@
+beginner:
+  pillar: "/english-beginner-guide/"
+  links:
+    - "/basic-phrases/"
+    - "/english-daily-life/"
+
+travel:
+  pillar: "/english-travel/"
+  links:
+    - "/airport-english/"
+    - "/hotel-phrases/"
+
+business:
+  pillar: "/business-english/"
+  links:
+    - "/meeting-english/"
+    - "/email-writing/"
