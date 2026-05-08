@@ -23,7 +23,20 @@ RELATED ARTICLES:
 RULES
 ========================
 
-- Write in English
+- Write in Italian.
+
+The article must be written entirely in Italian.
+
+You may keep English keywords, SEO terms and technical expressions when necessary,
+but the explanation, structure and writing must be in natural Italian.
+
+The tone must be:
+- semplice
+- pratico
+- naturale
+- adatto a studenti italiani
+
+Do NOT write in English.
 - Output ONLY markdown
 - Minimum 3500 words
 - Educational and practical tone
