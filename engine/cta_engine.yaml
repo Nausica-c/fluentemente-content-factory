@@ -1,0 +1,14 @@
+beginner:
+  soft: ["Inizia con le basi su Babbel"]
+  medium: ["Prova Babbel per 7 giorni"]
+  strong: ["Parla inglese da oggi con Babbel"]
+
+travel:
+  soft: ["Frasi utili per viaggiare"]
+  medium: ["Viaggia senza stress linguistico"]
+  strong: ["Parla subito all’estero con Babbel"]
+
+business:
+  soft: ["Migliora il tuo inglese lavoro"]
+  medium: ["Sblocca opportunità professionali"]
+  strong: ["Accelera la carriera con Babbel"]
