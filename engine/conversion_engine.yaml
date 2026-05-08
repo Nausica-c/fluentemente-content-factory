@@ -1,0 +1,14 @@
+funnel:
+  awareness:
+    cta_intensity: soft
+
+  consideration:
+    cta_intensity: medium
+
+  conversion:
+    cta_intensity: strong
+
+rules:
+  max_cta_per_article: 3
+  max_internal_links: 8
+  pillar_link_required: true
